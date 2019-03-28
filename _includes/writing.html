@@ -1,21 +1,22 @@
     <!-- Writing Section -->
     <section id="writing" class="container content-section text-center">
         <div class="row">
+            <h2>Writing</h2>
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Writing</h2>
-
                 {% for article in site.data.articles %}
-
                 <div class="col-lg-6">
                     <a href="{{ article.url }}" target="_blank">
                     <div style="height: 300px; background: url({{site.baseurl}}/img/article-images/{{article.img}}) no-repeat bottom center scroll; background-color: {{ site.color.primary-light }}; background-size: 300px 300px;"></div>
-                    <p>"{{article.title}}"                    </a><br>
-                        <em>{{article.publication}}</em></p>
-
+                    <p>"{{article.title}}"</a>
+                    <br>
+                    <em>{{article.publication}}</em></p>
                 </div>
+
+				{% assign mod = forloop.index | modulo: 2 %}
+				    {% if mod == 0 %}
+			        <div class="clearfix"></div>
+			    {% endif %}
                 {% endfor %}
-
-
             </div>
 
         </div>
