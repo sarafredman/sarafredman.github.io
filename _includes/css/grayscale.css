@@ -164,6 +164,12 @@ a:focus {
     text-decoration: underline;
 }
 
+.intro .intro-text a:hover,
+.intro .intro-text a:focus {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
 
 @media(min-width:767px) {
     .intro {
