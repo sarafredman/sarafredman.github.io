@@ -19,6 +19,8 @@ social:
     url: https://twitter.com/sarafredman
   - title: Instagram
     url: https://www.instagram.com/sarafredman/
+  - title: Substack
+    url: https://sarafredman.substack.com
 
 # Build settings
 markdown: kramdown
