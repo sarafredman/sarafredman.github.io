@@ -159,6 +159,12 @@ a:focus {
     font-size: 18px;
 }
 
+.intro .intro-body a {
+    color: "#ffffff";
+    text-decoration: "underline";
+}
+
+
 @media(min-width:767px) {
     .intro {
         height: 100%;
